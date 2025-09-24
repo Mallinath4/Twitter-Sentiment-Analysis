@@ -95,7 +95,7 @@ This project builds a multi-class text classification pipeline to predict the se
 * Provided insight into class separability and model confidence.
 
 *Example:*
-![ROC Curve](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/879aca3f-4368-4aa2-918b-da2b5de36656" />
+![ROC Curve](https://github.com/Mallinath4/Twitter-Sentiment-Analysis/blob/main/images/roc.png?raw=true
 )
 
 ---
