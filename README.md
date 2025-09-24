@@ -98,38 +98,6 @@ This project builds a multi-class text classification pipeline to predict the se
 ![ROC Curve](https://github.com/Mallinath4/Twitter-Sentiment-Analysis/blob/main/images/roc.png?raw=true
 )
 
----
-
-## How to run
-
-1. Create and activate a Python environment (recommended: conda or venv).
-2. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-# or individually:
-# pip install pandas numpy matplotlib seaborn scikit-learn tensorflow wordcloud tqdm
-```
-
-3. Place `twitter_dataset.csv` in the project root (or update the path in the notebook).
-4. Open `Twitter Sentiment Analysis.ipynb` in Jupyter / Colab and run cells sequentially. Colab-specific cell magic (e.g., `!pip install`) will work in Colab.
-
----
-
-## File structure (suggested)
-
-```
-/ (repo root)
-├─ Twitter Sentiment Analysis.ipynb
-├─ twitter_dataset.csv
-├─ README.md
-├─ requirements.txt
-├─ notebooks/ (optional: extra experiments)
-├─ models/ (saved trained models)
-└─ assets/ (figures, wordcloud images, ROC curves)
-```
-
----
 
 ## Dependencies
 
@@ -141,16 +109,10 @@ pip install -r requirements.txt
 
 ---
 
-## Notes & Tips
-
-* **Label encoding / loss mismatch**: When doing multi-class classification, ensure final layer activation is `softmax` and use `categorical_crossentropy` with one-hot labels. If using integer labels, use `sparse_categorical_crossentropy`.
-* **Sparse matrices**: Converting dense `toarray()` can be memory heavy for large vocabs. Consider using sparse-aware models or dimensionality reduction (e.g., TruncatedSVD) or using neural nets with embedding layers.
-* **Overfitting mitigation**:
-
-  * Reduce model capacity, add/dropout, use `EarlyStopping` callback based on `val_loss`.
-  * Use regularization, tune epochs, or add more data/augmentation.
-* **Evaluation**: Add confusion matrix, per-class precision/recall/F1, and classification report.
-
+##  Conclusions
+1. It would be a good idea to use some tools such as wordcloud when we are doing Natural Language Processing (NLP) to ensure that we are getting the best results for predictions respectively. We would be able to understand the frequently occurring words from the less frequently occurring words by the size of the words that are plotted in the wordcloud respectively.
+2. Steps should be taken to ensure that the model does not overfit or underfit. This ensures that the best predictions are being generated and therefore, we are going to get the best outputs respectively.
+3. Standarizing the text and ensuring that the values lie between 0 and 1 would be good as this would allow the machine learning models to generate weights that are quite small rather than having different weight range values.
 ---
 
 ## Future improvements
@@ -163,12 +125,7 @@ pip install -r requirements.txt
 
 ---
 
-## License & Contact
 
-* License: MIT (or choose your preferred license).
-* Author / Contact: \[Your Name] — add email / LinkedIn if desired.
-
----
 
 *Generated README for the Twitter Sentiment Analysis notebook. Feel free to ask if you want me to:*
 
