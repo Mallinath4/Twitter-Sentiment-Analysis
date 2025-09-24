@@ -86,7 +86,7 @@ This project builds a multi-class text classification pipeline to predict the se
 * Helped identify common patterns and frequently used terms across sentiments.
 
 *Example:*
-![Positive Wordcloud](assets/positive_wordcloud.png)
+![Positive Wordcloud](https://github.com/Mallinath4/Twitter-Sentiment-Analysis/blob/main/images/postive.png?raw=true)
 ![Negative Wordcloud](assets/negative_wordcloud.png)
 
 ### ROC Curves
